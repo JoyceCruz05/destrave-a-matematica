@@ -1,16 +1,168 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aulas Particulares de Matemática — Prof. Joyce Cruz</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destrave a Matemática</title>
+  <link rel="icon" href="assets/simbolo-matematico.png"image/png">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header class="board">
-        
+  <!-- Cabeçalho fixo no topo -->
+  <header class="cabecalho-container">
+    <div class="cabecalho">
+      <div class="logo">
+        <span class="logo-marca">DESTRAVE A</span>
+        <span class="logo-texto">MATEMÁTICA</span>
+      </div>
 
-    </header>
-    
+      <!-- Navegação -->
+      <nav class="navegacao">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#metodo">Método</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Início -->
+  <section id="inicio" class="secao-fullscreen principal">
+    <div class="apresentacao-conteudo">
+      <div class="hero-texto">
+        <p class="eyebrow">Reforço Escolar</p>
+        <h1>Destrave a Matemática com a Prof.ª Joyce Cruz.</h1>
+        <h2 class="titulo-aulas">
+          <span class="tipo-aula">
+            <img src="assets/computador.png" alt="Ícone de Computador" class="icone-aula">
+            Aulas Online
+          </span>
+          <span class="tipo-aula">
+            <img src="assets/compromisso.png" alt="Ícone de Calendário" class="icone-aula">
+            Aulas Presenciais
+          </span>
+        </h2>
+        <div class="hero-actions" style="margin-top: 24px; justify-content: center;">
+          <a href="#contato" class="botao botao-primario">Agendar Aula</a>
+        </div>
+      </div>
+      <div class="hero-imagem">
+        <img src="assets/quadro.png" alt="Quadro com símbolos matemáticos" class="imagem-quadro-inicio">
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="secao-fullscreen secao-sobre">
+    <div class="sobre-grid">
+      <div class="sobre-text">
+        <p class="eyebrow">Sobre as aulas</p>
+        <h2>Mais que uma aula, um plano para o seu desenvolvimento.</h2>
+        <p>
+          Sou professora de matemática há 5 anos, com foco em aulas individuais. Atendo alunos do 6º ano ao 3º ano do ensino médio, além de preparação para vestibular e ENEM.
+        </p>
+        <ul class="check-list">
+          <li>Aulas de 1h ou 1h30, presenciais (a combinar) ou por vídeo chamada.</li>
+          <li>Material próprio para exercícios, organizado por tópico.</li>
+          <li>Relatório de progresso para os pais, quando o aluno é menor de idade.</li>
+        </ul>
+      </div>
+      <div class="sobre-foto">
+          <img src="assets/Imagem.jpg" alt="Foto da Professora Joyce Cruz" class="foto-perfil-sobre">
+          <p class="nome-foto">Prof.ª Joyce Cruz</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Método -->
+  <section id="metodo" class="secao-fullscreen secao-metodo">
+    <div class="metodo-container">
+      <p class="eyebrow">O caminho</p>
+      <h2>Do conceito à execução</h2>
+      <div class="conteudo">
+        <div class="conteudo-destaque">
+          <h3>Diagnóstico</h3>
+          <p class="resumo">
+            Na primeira conversa a gente descobre onde a base travou — geralmente não é o assunto de agora, é um degrau lá atrás.
+          </p>
+        </div>
+
+        <div class="conteudo-destaque">
+          <h3>Explicação</h3>
+          <p>Resolvemos juntos, passo a passo, até o "ah, entendi" genuíno. Sem fórmula decorada sem sentido.</p>
+        </div>
+
+        <div class="conteudo-destaque">
+          <h3>Prática no caderno</h3>
+          <p>
+            Você refaz sozinho, com exercícios pensados pro seu nível. É aí que o conteúdo vira seu, de verdade.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="secao-fullscreen secao-contato">
+    <p class="eyebrow">Inscreva-se</p>
+    <h2>Vamos marcar a primeira aula?</h2>
+    <p style="margin-bottom: 20px;">Preencha os campos abaixo para agendar ou tirar dúvidas.</p>
+
+    <!--Formulario-->
+    <form class="formulario" id="formulario-contato">
+      <div class="campo">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+      </div>
+
+      <div class="campo">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+      </div>
+
+      <div class="campo">
+        <div class="campo-cep">
+          <label for="cep">CEP</label>
+          <input type="text" id="cep" name="cep" placeholder="00000-000" inputmode="numeric" maxlength="9">
+          <span class="field-hint" id="cep-status"></span>
+        </div>
+      </div>
+
+      <div class="field-row endereco-fields" id="endereco-fields" hidden>
+        <div class="field">
+          <label for="rua">Rua</label>
+          <input type="text" id="rua" name="rua" readonly>
+        </div>
+        <div class="field">
+          <label for="bairro">Bairro</label>
+          <input type="text" id="bairro" name="bairro" readonly>
+        </div>
+        <div class="field">
+          <label for="cidade">Cidade / UF</label>
+          <input type="text" id="cidade" name="cidade" readonly>
+        </div>
+      </div>
+
+      <div class="campo">
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="3" placeholder="Conte um pouco sobre a sua dificuldade..."
+          required></textarea>
+      </div>
+
+      <button type="submit" class="botao botao-primario">Enviar inscrição</button>
+      <p id="mensagem-envio" class="mensagem-envio" aria-live="polite"></p>
+    </form>
+  </section>
+
+  <!--Roda-pe-->
+  <footer class="roda-pe">
+    <p>&copy; <span id="ano-atual"></span> Destrave a Matemática. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
