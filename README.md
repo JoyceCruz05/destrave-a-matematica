@@ -8,9 +8,9 @@ JavaScript.</p>
 
 mathway-landing-page/<br>
 ├── assets/<br>
+│   ├── imagem.jpg<br>
 │   ├── compromisso.png<br>
 │   ├── computador.png<br>
-│   ├── imagem.jpg<br>
 │   ├── quadro.png<br>
 │   └── simbolo-matematica.png<br>
 ├── README.md<br>
