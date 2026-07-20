@@ -13,10 +13,11 @@ mathway-landing-page/<br>
 │   ├── imagem.jpg<br>
 │   ├── quadro.png<br>
 │   └── simbolo-matematica.png<br>
+├── README.md<br>
 ├── index.html<br>
-├── style.css<br>
 ├── script.js<br>
-└── README.md
+├── style.css
+
 
 <h2>Funcionalidades</h2>
 
